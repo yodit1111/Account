@@ -25,6 +25,7 @@ output application/json
 msg: "The incoming message has been sent to activemq Q100"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="355152a3-4f35-4320-bfb3-678a009539fe" message="outPut^^^#[payload]"/>
 	</flow>
 	<flow name="activemqFlow1" doc:id="13a794f7-9036-4271-a467-275ca292e5c2" >
 		<http:listener doc:name="Listener" doc:id="35372c9b-5721-4e6e-8fa4-e03819d71f82" config-ref="HTTP_Listener_config" path="/consume"/>
